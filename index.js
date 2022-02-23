@@ -1,9 +1,8 @@
-import {readInputFile, writeSubmissionFile} from './hashcodeUtils'
+import { readInputFile, writeSubmissionFile } from './hashcodeUtils'
 
 function main() {
-    console.log('Scrivi qui il tuo codice')
-    readInputFile()
-    writeSubmissionFile()
+    readInputFile('./problem/inputFiles/a.in')
+    writeSubmissionFile('./output.txt', 'Scivi qui il tuo submission')
 }
 
 main()
