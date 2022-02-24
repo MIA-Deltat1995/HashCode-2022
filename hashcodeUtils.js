@@ -5,7 +5,7 @@ const readInputFile = (path) => {
         .readFileSync(path, 'utf-8')
         .split('\n')
         .filter(Boolean)
-        .map((line) => line.split(' ').map((data) => parseInt(data, 10)))
+        .map((line) => line.split(' ').map((data) => parseInt(data, 10) || data ))
 
     console.log('\n\nHo letto il file di input con queste lines: \n\n')
     console.log(lines)
